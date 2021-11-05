@@ -70,7 +70,7 @@ const YearMakeModel = () => {
         ))}
       </select>
       <select id="makes-select" onChange={handleMakeChange}>
-        <option defaultValue>
+        <option defaultValue hidden>
           {makes.length === 1 ? years[0].name : 'Makes....'}
         </option>
         {makes.map((e) => (
